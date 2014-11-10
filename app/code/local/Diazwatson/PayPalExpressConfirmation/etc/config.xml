@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Diazwatson_PayPalExpressConfirmation>
+            <version>0.1.0</version>
+        </Diazwatson_PayPalExpressConfirmation>
+    </modules>
+    <global>
+        <models>
+            <paypalexpressconfirmation>
+                <class>Diazwatson_PayPalExpressConfirmation_Model</class>
+            </paypalexpressconfirmation>
+            <paypal>
+                <rewrite>
+                    <config>Diazwatson_PayPalExpressConfirmation_Model_Config</config>
+                </rewrite>
+            </paypal>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <paypal>
+                <args>
+                    <modules>
+                        <paypalexpressconfirmation before="Mage_PayPal">Diazwatson_PayPalExpressConfirmation</paypalexpressconfirmation>
+                    </modules>
+                </args>
+            </paypal>
+        </routers>
+    </frontend>
+</config>
