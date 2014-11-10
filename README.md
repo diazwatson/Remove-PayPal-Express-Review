@@ -1,2 +1,2 @@
-Remove PayPal Express Review Step
+Remove PayPal Express Review Page
 =================================
